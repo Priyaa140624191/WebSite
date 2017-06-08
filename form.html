@@ -1,0 +1,12 @@
+<html>
+<body>
+
+<form action="welcome.php" method="post">
+E-mail: <input type="text" name="email"><br>
+Password: <input type="password" name="name"><br>
+<input type="submit" value="Login"/>
+New user? Click <a href="/WebSite/Register.php">here</a>
+</form>
+<?php setcookie("Email", $email, time() + (86400 * 30), "/"); ?>
+</body>
+</html>
